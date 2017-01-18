@@ -4,24 +4,46 @@
     <meta charset="UTF-8">
 </head>
 <body ng-controller="MainCtrl">
-    <header>
-      <h2 ng-show="1 > 0">Sobre</h2>
-      <p>Esse é um projeto dos cursos de férias da Facens, feito por {{ author }}</p>
-      <input ng-model="nomeDoDonoDoJarJarBinks" type="text" placeholder="digite aqui seu nome">
-      <button ng-click="jarJarBinks()">
-        Clique aqui para receber seu jarjarbinks
-      </button>
-    </header>
-    <h1>Personagens Star Wars</h1>
-    <ul>
-        <li ng-repeat="character in characters">
-            {{ $index + 1}} - {{character.name}} {{ character.jedi == true ? 'é um jedi' : 'não é um jedi'}}
+    <nav>
+      <ul>
+        <li>
+          <button ng-click="showCharacters = !showCharacters">Personagens</button>
         </li>
-    </ul>
-    <button ng-click="mostrar = !mostrar">Mostrar H2</button>
-    <section ng-if="mostrar == true">
-      <h2>Personagens</h2>
+        <li>
+          <button ng-click="showWorlds = !showWorlds">Planetas</button>
+        </li>
+        <li>
+          <button ng-click="showFilms = !showFilms">Filmes</button>
+        </li>
+        <li>
+          <button ng-click="showShips = !showShips">Naves</button>
+        </li>
+        <li>
+          <button ng-click="showCreatures = !showCreatures">Criaturas</button>
+        </li>
+      </ul>
+    </nav>
+    <section ng-if="showCharacters">
+        <h2>Personagens</h2>
+        <ul>
+          <li ng-repeat="character in characters">
+            <p>{{ character.name }}</p>
+          </li>
+        </ul>
     </section>
+    <section ng-if="showWorlds">
+        <h2>Planetas</h2>
+    </section>
+    <section ng-if="showFilms">
+        <h2>Filmes</h2>
+    </section>
+    <section ng-if="showShips">
+        <h2>Naves</h2>
+    </section>
+    <section ng-if="showCreatures">
+        <h2>Criaturas</h2>
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="index.js"></script>
 </body>
