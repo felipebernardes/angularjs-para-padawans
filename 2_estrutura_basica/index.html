@@ -7,26 +7,33 @@
     <link rel="stylesheet" href="normalize.css">
 
     <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body ng-controller="MainCtrl">
+    <header>
+      <h1>JarJarDex</h1>
+      <p>Uma enciclopédia Star Wars</p>
+      <p>
+          tipo pokedéx só que de star wars... <em>sacou</em>?
+      </p>
+    </header>
     <nav>
       <ul>
         <li>
-          <button ng-click="showCharacters = !showCharacters">Personagens</button>
+          <a ng-click="showCharacters = !showCharacters">Personagens</a>
         </li>
         <li>
-          <button ng-click="showWorlds = !showWorlds">Planetas</button>
+          <a ng-click="showWorlds = !showWorlds">Planetas</a>
         </li>
         <li>
-          <button ng-click="showFilms = !showFilms">Filmes</button>
+          <a ng-click="showFilms = !showFilms">Filmes</a>
         </li>
         <li>
-          <button ng-click="showShips = !showShips">Naves</button>
+          <a ng-click="showShips = !showShips">Naves</a>
         </li>
         <li>
-          <button ng-click="showCreatures = !showCreatures">Criaturas</button>
+          <a ng-click="showCreatures = !showCreatures">Criaturas</a>
         </li>
       </ul>
     </nav>
@@ -50,6 +57,12 @@
     <section ng-if="showCreatures">
         <h2>Criaturas</h2>
     </section>
+
+    <footer>
+        <p>
+            App criado na Facens @ Janeiro / 2017
+        </p>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="index.js"></script>
