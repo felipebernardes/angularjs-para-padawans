@@ -2,6 +2,11 @@ angular.module('App', [])
 
     .controller('MainCtrl', function ($scope) {
 
+/*
+      $scope.mostrarH2 = function () {
+        $scope.flag = true;
+      }
+*/
       $scope.author = "Felipe Bernardes";
 
       $scope.jarJarBinks = function() {
