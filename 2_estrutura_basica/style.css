@@ -1,0 +1,16 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  color: #FFF;
+  background: #000;
+  font-family: 'Overpass Mono', monospace;
+}
