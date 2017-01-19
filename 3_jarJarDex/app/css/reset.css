@@ -1,0 +1,39 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+  background: #111;
+  padding: .5rem;
+  position: relative;
+  text-align: center;
+}
+
+a:hover,
+a:active {
+  background: #333;
+}
