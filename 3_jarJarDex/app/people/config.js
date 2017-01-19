@@ -6,7 +6,7 @@
 
   function configRouter($routeProvider) {
     $routeProvider
-      .when('#/people', {
+      .when('/people', {
         controller: 'People.IndexCtrl',
         controllerAs: '$ctrl',
         templateUrl: 'people/view/index.html'
