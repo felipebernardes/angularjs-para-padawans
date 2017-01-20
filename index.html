@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="App">
+  <head>
+    <meta name="viewport" content="initial-scale=1">
+    <meta charset="UTF-8">
+    <title>JarJarDex</title>
+    <style>
+      [ng-cloak], .ng-cloak { display: none; }
+    </style>
+    <!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=???"-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body ng-controller="AppCtrl as $appCtrl" ng-cloak>
+
+    <header>
+      <h1>Welcome to jarJarDex!</h1>
+      <p>It's like a pokedex... but for star wars!</p>
+      <p>got it? jarjardex...</p>
+      <nav>
+        <ul>
+          <li><a ng-href="#/people">people</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main-section" ng-view>
+    </section>
+
+    <footer>
+      <p>made @ Facens / AngularJS para Padawans</p>
+    </footer>
+
+    <!-- scripts -->
+      <!-- dependencias -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+      <!-- modulo people -->
+        <script src="people/config.js"></script>
+        <script src="people/filter/people-gender.js"></script>
+        <script src="people/service/people.js"></script>
+        <script src="people/controller/index.js"></script>
+      <!-- modulo principal -->
+
+      <script src="config.js"></script>
+      <script src="app.js"></script>
+      <script src="app/config.js"></script>
+
+      <script src="app/controller/app.js"></script>
+
+  </body>
+</html>
