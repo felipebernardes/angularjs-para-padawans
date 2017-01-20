@@ -6,7 +6,14 @@
   function IndexCtrl($timeout, PeopleService) {
     this.jedis = PeopleService.jedis;
 
-    console.log(this.jedis);
+    PeopleService.list().then(function (people) {
+      this.people = people;
+      console.log(this.people);
+    });
+
+    this.teste = "asoksdokadoak";
+
+    PeopleService.getApiUrl();
 
     this.jedi = {
       name: "yoda",

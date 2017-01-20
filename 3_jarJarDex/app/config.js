@@ -1,7 +1,7 @@
 (function (angular) {
 
   angular.module('Config', ['ngRoute'])
-  .constant('API', '')
+  .constant('API', 'http://swapi.co/api/')
   .config(['$routeProvider', configRouter]);
 
   function configRouter($routeProvider) {

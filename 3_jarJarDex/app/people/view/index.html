@@ -1,8 +1,15 @@
 
-<h2>People</h2>
+<h2>Personagens</h2>
 <section>
-  <p>Cheia de manias... toda dengosa... menina bonita... saabe que {{ $ctrl.jedi.name }}</p>
-  <p>
-    o {{ $ctrl.jedi.name }} é {{ $ctrl.jedi.gender | peopleGender }}
-  </p>
+  <ul>
+    <li ng-if="$ctrl.people" class="person-card" ng-repeat="person in people">
+      <h3>{{ person.name }}</h3>
+      <p><span>altura:</span> {{ person.height }}</p>
+      <p><span>gênero:</span> {{ person.gender }}</p>
+      <p><span>cor dos olhos:</span> {{ person.eye_color }}</p>
+      <p ng-if="person.starships">
+        <span>principal nave:</span> {{ person.starships[0] }}
+      </p>
+    </li>
+  </ul>
 </section>
