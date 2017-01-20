@@ -1,8 +1,12 @@
 
 <h2>Personagens</h2>
 <section>
+  <p>
+    {{ $ctrl.teste }}
+    people: {{ $ctrl.people }}
+  </p>
   <ul>
-    <li ng-if="$ctrl.people" class="person-card" ng-repeat="person in people">
+    <li ng-if="$ctrl.people" class="person-card" ng-repeat="person in $ctrl.people">
       <h3>{{ person.name }}</h3>
       <p><span>altura:</span> {{ person.height }}</p>
       <p><span>gênero:</span> {{ person.gender }}</p>
