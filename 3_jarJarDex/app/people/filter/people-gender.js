@@ -6,13 +6,13 @@
 
   function PeopleGenderFilter() {
 
-    var types = {
-      'M': 'Male',
-      'F': 'Female'
+    var genders = {
+      'male': 'Homi',
+      'female': 'Muié'
     };
 
-    function filter(type) {
-      return types[type] || type;
+    function filter(gender) {
+      return genders[gender] || gender;
     }
 
     return filter;

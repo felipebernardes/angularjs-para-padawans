@@ -1,5 +1,4 @@
 (function (angular) {
-  'use strict';
 
   angular.module('Config', ['ngRoute'])
   .constant('API', '')

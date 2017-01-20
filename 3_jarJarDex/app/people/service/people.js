@@ -6,14 +6,15 @@
 
   function PeopleService(API) {
 
-    var hello = function(name) {
-      name = name || "jarjar";
-
-      return "hello " + name;
-    };
+    var jedis = [
+      { name: 'luke' },
+      { name: 'obi' },
+      { name: 'yoda' },
+      { name: 'anakin' }
+    ];
 
     return {
-      hello: hello
+      jedis: jedis
     };
   }
 })(angular);

@@ -1,4 +1,115 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.main-section {
+  padding-top: 15vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
 body {
-  background: #111;
   color: #FFF;
+  background: #000;
+  font-family: 'Overpass Mono', monospace;
+}
+
+button {
+  color: #000;
+  border: 1px solid #fff;
+}
+
+/* título */
+header {
+  height: 10vh;
+  padding: 2vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #333;
+}
+
+header p {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+  color: #fee71f;
+}
+
+body {
+  padding-top: 10vh;
+}
+
+/* navbar */
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  padding: 1vh 1vw;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  font-size: 10px;
+}
+
+nav li {
+  margin: auto;
+  text-align: center;
+}
+
+nav a {
+  cursor: pointer;
+  color: #fee71f;
+  border: 2px solid #fee71f;
+  padding: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+  display: none;
 }
